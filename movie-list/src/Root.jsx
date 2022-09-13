@@ -6,7 +6,6 @@ function Root() {
     return (
         <div>
           <MovieForm />
-          
         </div>
     );
 }
