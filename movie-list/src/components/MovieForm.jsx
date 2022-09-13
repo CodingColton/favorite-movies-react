@@ -5,9 +5,9 @@ export const MovieForm = () => {
     
     const AddItem = () => {
         let movieInput = document.getElementById('movie-input').value;
-        movieInput !== "" ? favoriteMovies.push(movieInput) : console.log("can't be blank");
-        
+        movieInput !== "" ? favoriteMovies.push(movieInput) : console.log("can't be blank");        
         document.getElementById('movie-input').value = "";
+        
         console.log(favoriteMovies);
     };
     
@@ -20,13 +20,13 @@ export const MovieForm = () => {
             </div>
 
             <div>
-            <h1>Favorite Movies</h1>
-            <ul>
-                {favoriteMovies.map((movie) => (
-                    <MovieList movieName={movie} />
-                ))}
-            </ul>
-        </div>
+                <h1>Favorite Movies</h1>
+                <ul>
+                    {favoriteMovies.map((movie) => (
+                        <MovieList movieName={movie} />
+                    ))}
+                </ul>
+            </div>
         </div>
     );
 }
