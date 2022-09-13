@@ -4,10 +4,8 @@ export const MovieForm = () => {
     const AddItem = () => {
         let movieInput = document.getElementById('movie-input').value;
         movieInput !== "" ? favoriteMovies.push(movieInput) : console.log("can't be blank");
-        movieInput = "";
+        
         document.getElementById('movie-input').value = "";
-
-        console.log(favoriteMovies);
     };
     
     return (
